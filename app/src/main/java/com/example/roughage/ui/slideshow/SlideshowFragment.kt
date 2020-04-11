@@ -93,13 +93,10 @@ class SlideshowFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        button.setOnClickListener(object:View.OnClickListener{
-            override fun onClick(v: View?) {
-                if(minterstitialAD.isLoaded){
-                    minterstitialAD.show()
-                }
+        button.setOnClickListener {
+            if(minterstitialAD.isLoaded){
+                minterstitialAD.show()
             }
-
-        })
+        }
     }
 }
