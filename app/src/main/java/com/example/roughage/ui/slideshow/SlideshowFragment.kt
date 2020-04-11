@@ -92,6 +92,7 @@ class SlideshowFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        //chouhan
 
         button.setOnClickListener {
             if(minterstitialAD.isLoaded){
